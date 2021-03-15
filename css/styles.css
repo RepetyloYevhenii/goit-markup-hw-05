@@ -94,6 +94,7 @@ img {
 /* Шапка сайта */
 .header {
   position: fixed;
+  z-index: 9;
   width: 100%;
   top: 0;
   left: 0;
@@ -181,6 +182,7 @@ img {
 }
 
 .link-nav {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -190,6 +192,17 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.link-nav.curent::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
 }
 
 /* стилизация логотипа */

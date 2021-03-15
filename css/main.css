@@ -52,6 +52,7 @@
   margin-bottom: 30px;
   background-color: #f5f4fa;
   justify-content: center;
+  align-items: center;
   border-radius: 4px;
 }
 
@@ -132,10 +133,6 @@
   line-height: 1.17;
   text-align: center;
   color: var(--color-text-h);
-}
-
-.work-list .work-photo + .work-photo {
-  margin-left: 30px;
 }
 
 .title {
@@ -256,6 +253,7 @@
 
 .backdrop {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -281,4 +279,60 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+/* чем мы занимаемся */
+
+.work-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-photo:hover .work-text-contanier {
+  transform: translateY(0);
+}
+
+.work-list .work-photo + .work-photo {
+  margin-left: 30px;
+}
+
+.work-text-contanier {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 27px;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  transform: translateY(75%);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) transform 0.25s;
+}
+
+.work-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* кнопка закрытия модального окна */
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.close {
 }
