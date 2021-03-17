@@ -63,6 +63,7 @@
 .icon-logo:hover,
 .icon-logo:focus {
   fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social {
@@ -87,11 +88,13 @@
 .icon-social:hover,
 .icon-social:focus {
   background-color: var(--color-accent);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social:hover .icon-team,
 .icon-social:focus .icon-team {
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-section .list-text + .list-text {
@@ -203,11 +206,13 @@
 .linc-clients:hover,
 .linc-clients:focus {
   border: 1px solid var(--color-accent);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .linc-clients:hover .icon-logo,
 .linc-clients:focus .icon-logo {
   fill: var(--color-accent);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-media {
@@ -229,6 +234,7 @@
 .icon-media:focus {
   background-color: var(--color-accent);
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media {
